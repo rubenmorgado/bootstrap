@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>create page</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- <link href="css/pages_viral.css" rel="stylesheet"> -->
+
+
+</head>
+
+     <body style="background-color: #ebebe0;">
+      
+    
+        
+        <div class="row">
+            
+          <div class="col-lg-6 m-t-md m-l-md" style="width: 800px;">
+                    <div class="tabs-container">
+
+                      
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a data-toggle="tab" href="#tab-6" aria-expanded="true">Create Page</a></li>
+                                <li class=""><a data-toggle="tab" href="#tab-7" aria-expanded="false">Facebook Geographic coordinates</a></li>
+                                <li class=""><a data-toggle="tab" href="#tab-8" aria-expanded="false">About</a></li>
+                            </ul>
+                            <div class="tab-content ">
+                                <div id="tab-6" class="tab-pane active">
+                                    <div class="panel-body">
+                                        
+                                            <div class="col-sm-6 ">
+                                             <input type="number" placeholder="ID" class="form-control input-sm b-r-xl">
+                                            </div>
+                                            <div class="col-sm-6">
+                                             <input type="email" placeholder="Email" class="form-control input-sm b-r-xl">
+                                            </div>
+                                            <div class="col-sm-6 m-t-sm">
+                                             <input type="text" placeholder="Name" class="form-control input-sm b-r-xl">
+                                            </div>
+                                              <div class="col-sm-6 m-t-sm">
+                                               <input type="tel" placeholder="Phone" class="form-control input-sm b-r-xl">
+                                              </div>
+                                            <div class="col-sm-6 m-t-sm">
+                                             <input type="text" placeholder="Username" class="form-control input-sm b-r-xl">
+                                            </div>
+                                            <div class="col-sm-6 m-t-sm">
+                                             <input type="text" placeholder="Page Tags" class="form-control input-sm b-r-xl">
+                                            </div>
+                                              <div class="col-sm-6 m-t-sm">
+                                               <input type="url" placeholder="Website" class="form-control input-sm b-r-xl">
+                                              </div>
+                                             <div class="checkbox col-sm-5 m-l-xs m-t-md">
+                                                  <label class="checkbox-inline" for="checkbox1"><input type="checkbox" id="checkbox1">Is Facebook?</label>
+                                                  <label class="checkbox-inline"><input type="checkbox" value="">Publish events?</label>
+                                            </div>
+                                              <div class="col-sm-12 text-center p-xs m-t-xs border-top-bottom">
+                                              
+                                                <label class="checkbox-inline"><input type="checkbox" value="">Place?</label>
+                                                <label class="checkbox-inline"><input type="checkbox" value="">Connection visible?</label>
+                                                <label class="checkbox-inline"><input type="checkbox" value="">Show map?</label>
+                                              
+                                              </div>
+                                           
+                                              <div class="m-t-md col-lg-12 center-block"> 
+
+                                                <img src="img/p7.jpg" alt="" class="img-responsive col-sm-3 img-xl">
+                                                   
+                                                          <div class=" col-sm-5 m-b-xxs "> 
+                                                            <select class="form-control input-sm p-xxs b-r-xl" name="account">
+                                                              <option>Local/Promotor</option>
+                                                              <option>Local/Promotor</option>
+                                                              <option>Local</option>
+                                                              <option>Promotor</option>
+                                                            </select>
+                                                          </div>
+                                                           <div class=" col-sm-4 ">
+                                                                <select class="form-control input-sm p-xxs b-r-xl" name="account">
+                                                                 <option>Category</option>
+                                                                 <option>option1</option>
+                                                                 <option>option2</option>  
+                                                              </select>
+                                                           </div>  
+                                                           <div class="col-sm-5 m-t-sm">
+                                                             <select class="form-control input-sm p-xxs b-r-xl" name="account">
+                                                                 <option>Connections</option>
+                                                                 <option>option1</option>
+                                                                 <option>option2</option>  
+                                                              </select>
+                                                           </div>   
+                                                           <div class="col-sm-12 m-t-sm border-top">
+                                                             <input type="text" placeholder="External code for this entry" class="form-control input-sm b-r-xl m-t-md">
+                                                           </div>
+                                                          
+                                               </div>
+                                    </div>
+                                </div>
+                                <div id="tab-7" class="tab-pane">
+                                    <div class="panel-body">
+                                      <div class="checkbox col-sm-12 text-center "> 
+                                          <label for="checkbox1"><input type="checkbox" id="checkbox1"> Use Geographic coordinates from Facebook?</label>     
+                                      </div>
+                                        <div id="googleMap" class="m-b-md" style="width:100%;height:200px;"></div>
+
+                                            <script>
+                                              function myMap() {
+                                              var mapProp= {
+                                                  center:new google.maps.LatLng(51.508742,-0.120850),
+                                                  zoom:5,
+                                              };
+                                              var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+                                              }
+                                            </script>
+
+                                              <div class="col-sm-6 ">
+                                               <input type="number" placeholder="Latitude" class="form-control input-sm b-r-xl">
+                                              </div>
+                                               <div class="col-sm-6 ">
+                                               <input type="number" placeholder="Longitude" class="form-control input-sm b-r-xl">
+                                              </div>
+                                              <div class="col-sm-4 m-t-sm">
+                                               <input type="text" placeholder="City" class="form-control input-sm b-r-xl">
+                                              </div>
+                                              <div class="col-sm-8">
+                                                <a class="btn btn-info btn-rounded btn-sm m-t-sm" href="#">Geolocate Adress</a>
+                                                <a class="btn btn-info btn-rounded btn-sm m-t-sm m-l-sm" href="#">Apply new coordenates</a>
+                                                <a class="btn btn-info btn-rounded btn-sm m-t-sm m-l-sm" href="#">Revert coordinates</a>
+                                              </div>                                             
+                                              <div class="col-sm-12 m-t-sm">
+                                               <input type="text" placeholder="Street" class="form-control input-sm b-r-xl">
+                                              </div>
+                                             
+
+                                    </div>
+                                </div>
+                                 <div id="tab-8" class="tab-pane">
+                                    <div class="panel-body">
+                                      <div class="row">
+                                        <div class="col-sm-12">
+                                          <div class="col-sm-3">
+                                            <label class="checkbox-inline"><input type="checkbox" value="">Artes Cénicas</label>
+                                          </div>  
+                                           <div class="col-sm-3">
+                                            <label class="checkbox-inline"><input type="checkbox" value="">Musica</label>
+                                          </div>  
+                                           <div class="col-sm-3">
+                                            <label class="checkbox-inline"><input type="checkbox" value="">Artes Visuais</label>
+                                          </div>  
+                                           <div class="col-sm-3">
+                                            <label class="checkbox-inline"><input type="checkbox" value="">Instituição</label>
+                                          </div>  
+                                          <div class="col-sm-3">
+                                            <label class="checkbox-inline"><input type="checkbox" value="">Club</label>
+                                          </div> 
+                                          <div class="col-sm-3">
+                                            <label class="checkbox-inline"><input type="checkbox" value="">Bar</label>
+                                          </div> 
+                                           <div class="col-sm-3">
+                                            <label class="checkbox-inline"><input type="checkbox" value="">Espaço Multifunções</label>
+                                          </div> 
+                                           <div class="col-sm-3">
+                                            <label class="checkbox-inline"><input type="checkbox" value="">Galeria</label>
+                                          </div> 
+                                           <div class="col-sm-3">
+                                            <label class="checkbox-inline"><input type="checkbox" value="">Festival</label>
+                                          </div> 
+                                           <div class="col-sm-3">
+                                            <label class="checkbox-inline"><input type="checkbox" value="">Sala de Espectáculos</label>
+                                          </div> 
+                                           <div class="col-sm-3">
+                                            <label class="checkbox-inline"><input type="checkbox" value="">Loja</label>
+                                          </div> 
+                                           <div class="col-sm-3">
+                                            <label class="checkbox-inline"><input type="checkbox" value="">Feira/Mercado</label>
+                                          </div> 
+                                           <div class="col-sm-3">
+                                            <label class="checkbox-inline"><input type="checkbox" value="">Cinema & Video</label>
+                                          </div> 
+                                           <div class="col-sm-3">
+                                            <label class="checkbox-inline"><input type="checkbox" value="">Associação</label>
+                                          </div> 
+                                           <div class="col-sm-3">
+                                            <label class="checkbox-inline"><input type="checkbox" value="">Media</label>
+                                          </div> 
+                                           <div class="col-sm-3">
+                                            <label class="checkbox-inline"><input type="checkbox" value="">Educação/Formação</label>
+                                          </div> 
+                                           <div class="col-sm-3">
+                                            <label class="checkbox-inline"><input type="checkbox" value="">Arquitectura & Design</label>
+                                          </div> 
+                                          <div class="col-sm-3">
+                                            <label class="checkbox-inline"><input type="checkbox" value="">Literatura/Editora</label>
+                                          </div>
+                                          <div class="col-sm-3">
+                                            <label class="checkbox-inline"><input type="checkbox" value="">Socieade e Ecologia</label>
+                                          </div>
+                                          <div class="col-sm-3">
+                                            <label class="checkbox-inline"><input type="checkbox" value="">Hostel/Hospitalidade</label>
+                                          </div>
+                                          <div class="col-sm-3">
+                                            <label class="checkbox-inline"><input type="checkbox" value="">Restaurante</label>
+                                          </div>
+                                          <div class="col-sm-3">
+                                            <label class="checkbox-inline"><input type="checkbox" value="">Espaço Público</label>
+                                          </div>
+                                          <div class="col-sm-3">
+                                            <label class="checkbox-inline"><input type="checkbox" value="">Museus</label>
+                                          </div>
+                                          <div class="col-sm-3">
+                                            <label class="checkbox-inline"><input type="checkbox" value="">Biblioteca</label>
+                                          </div>
+                                          <div class="col-sm-3">
+                                            <label class="checkbox-inline"><input type="checkbox" value="">Parque/Jardim</label>
+                                          </div>
+                                          <div class="col-sm-3">
+                                            <label class="checkbox-inline"><input type="checkbox" value="">Localidade</label>
+                                          </div>
+                                          <div class="col-sm-3">
+                                            <label class="checkbox-inline"><input type="checkbox" value="">Outros</label>
+                                          </div>
+                                      </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                    </div>
+                </div> <!-- end painel body -->
+
+        </div> <!-- end main div -->
+
+    </div> <!-- end Row -->
+
+      <!-- footer -->
+
+         <div class="row m-l-md ">
+           <div class="col-lg-6 text-center" style="width:770px; background-color: white;">
+             <a class="btn btn-primary btn-rounded btn-sm m-t-sm m-b-sm" href="#">Reject Page</a>
+             <a class="btn btn-primary btn-rounded btn-sm m-t-sm m-l-sm m-b-sm" href="#">Remove</a>
+             <a class="btn btn-primary btn-rounded btn-sm m-t-sm m-l-sm m-b-sm" href="#">Cancel</a>
+             <a class="btn btn-primary btn-rounded btn-sm m-t-sm m-l-sm m-b-sm" href="#">Approve Page</a>
+           </div>
+         </div>
+                       
+
+        <!-- Mainly scripts -->
+            <script src="js/jquery-3.1.1.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+            <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+            <!-- Custom and plugin javascript -->
+            <script src="js/inspinia.js"></script>
+            <script src="js/plugins/pace/pace.min.js"></script>
+
+
+    </body>
+
+</html>

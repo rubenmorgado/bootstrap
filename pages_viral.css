@@ -1,0 +1,18 @@
+body{
+	background-color: #FFFFFF;
+}
+
+
+
+.event ul{
+	max-width: 250px;
+}
+
+.formulario {
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+
+.search {
+	height: 22px !important;
+}
